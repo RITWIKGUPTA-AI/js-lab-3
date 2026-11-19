@@ -6,7 +6,7 @@ let divElem = document.getElementById("div");
 let inputOneElem = document.getElementById("inputOne");
 let inputTwoElem = document.getElementById("inputTwo");
 
-let calculate = document.getElementById("Calculator");
+let calculateElem = document.getElementById("calculate");
 
 let outputElem = document.getElementById("Output");
 outputElem.textContent = 0;
@@ -85,8 +85,8 @@ divElem.addEventListener('click', function () {
     }
 })
 calculateElem.addEventListener('click', function() {
-    let valOne = inputOneElem.value;
-    let valTwo = inputTwoElem.value;
+    let valOne = Number(inputOneElem.value);
+    let valTwo = Number(inputTwoElem.value);
     console.log(valOne, valTwo);
     switch(selectedOperator){
          case "+":
